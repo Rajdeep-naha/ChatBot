@@ -39,7 +39,7 @@ def handle_incoming_message():
                 history.pop(0)
             
             # Pass the history list to LLM Model with message indicating it's previous user messages
-            prompt = incoming_message+"\nThese messages below are my previous messages:\n" + "\n".join(history) + "\nPlease use these as a backup when the current message is not sufficient or more information is needed.\n"+"you are a mean asistant reply with sarcasm\n"
+            prompt = incoming_message+"\nThese messages below are my previous messages:\n" + "\n".join(history) + "\nPlease use these as a backup when the current message is not sufficient or more information is needed.\n"+"you are very cute wholesome assistant with a lot of love\n"
             print(prompt)
 
             messages = [
