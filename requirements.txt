@@ -1,4 +1,6 @@
 Flask==3.0.2
 twilio==6.50.1
 python-dotenv
-huggingface_hub 
+huggingface_hub
+streamlit 
+pillow
