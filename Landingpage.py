@@ -39,7 +39,8 @@ if prompt := st.chat_input('Ask anything'):
     with  st.chat_message('user'):
         st.markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
-    x = model(prompt,client,hf_api_key,history)
+    with st.spinner("Generating"):
+        x = model(prompt,client,hf_api_key,history)
 
 
 with  st.chat_message('assistant'):

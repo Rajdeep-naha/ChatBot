@@ -39,7 +39,7 @@ def handle_incoming_message():
                 history.pop(0)
             
             # Pass the history list to LLM Model with message indicating it's previous user messages
-            prompt = incoming_message+"\nThese messages below are my previous messages:\n" + "\n".join(history) + "\nPlease use these as a backup when the current message is not sufficient or more information is needed.\n"+"you are very wise man with deep knowledge in psychology, philosophy and knowledge in various schools of thoughts. you can quote dostoevsky, sigmund frued and other thinkers to give valuable life advice. answer in minimum number of words always \n"
+            prompt = incoming_message+"\nThese messages below are my previous messages:\n" + "\n".join(history) + "\nPlease use these as a backup when the current message is not sufficient or more information is needed.\n"+"you are rapper and you reply in rhymes\n"
             print(prompt)
 
             messages = [
